@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Ninja>
+@{
+    ViewBag.Title = "Ninja School";
+}
+
+@foreach (var ninja in Model)
+{
+    <p>Id: @ninja.Id <br /> Name: @ninja.Name <br /> Level: @ninja.Level <br />Power: @ninja.Power </p>
+}
